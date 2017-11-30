@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Rancho" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <title>Scraping With Mongoose</title>
+    <style>
+     body {
+  margin: 0;
+  padding: 0;
+  background-image: url("images/world.jpg");
+
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+article {
+
+  border: 30px solid rgba(255, 255, 255, 0.5);
+  margin: 15px;
+  color
+  height: 100%;
+}
+#articles {
+
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  margin: 5px;
+  color
+  height: 100%;
+}
+
+
+h1 {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 36px;
+  letter-spacing: 3px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Pacific', cursive;
+}
+
+ .jumbotron {
+          
+  height: 300px;
+  border: 9px solid #346fb2;
+  background-image: url("images/news2.jpg");
+
+          }      
+    
+  h2{
+      font-family: 'Rancho', cursive;
+      text-align: right;
+      font-size: 40px;
+
+      }
+  h3{
+     font-family:times;
+       text-align: center;
+       font-size: 25px;
+       color:#ff7f50;
+      }
+  h4{
+    text-align: center;
+
+  }    
+
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+        color:black;
+        background:#fbe76d;
+      }
+      #notes {
+
+        float: right;
+        width: 37%;
+
+      }
+
+      #savenote{
+        background-color: #346fb2; 
+        border: none;
+        color: white;
+        margin-top:15px;
+        margin-left:85px;
+        padding: 15px 32px;
+        border-radius: 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 50%;
+      }
+
+      #deletenote{
+        background-color:  #f4980a; /* Green */
+        border: none;
+        color: white;
+        margin-top:10px;
+        margin-left:85px;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        width: 50%;
+        border-radius: 25px;
+      }
+      textarea, input {
+       /* display: block;*/
+        width: 100%;
+        background-color: #fbe76d;
+         border-radius: 25px;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+        border-radius: 25px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+ 
+
+<article>
+<div id="wrapper">
+
+     <div class="jumbotron"></div>
+
+        <div > 
+          <h1 class="text-center text-white">"Scraping news for youthful minds!!"</h1>
+        </div> 
+           <div class="row">
+                 
+              <div class="col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"></div>
+                      <div class="panel-body">
+               
+                         <p id="readArticle" class= "hidden"><a href="" id="article" target="_blank"><button class="btn btn-primary">Read Article</button></a></p>
+                          <p><button id="getArticles" class="btn btn-primary">Read Articles</button></p>
+                        
+                        <div id="articles"></div>
+                        <div id="notes"></div> 
+                        
+                    </div>  
+         </div>
+       
+    </div>
+        
+   
+</article>
+       
+      
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
